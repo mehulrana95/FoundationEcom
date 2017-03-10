@@ -1,0 +1,13 @@
+body{
+  .main-banner{
+    height: calc(100vh - 0px) !important;
+    background: url('../assets/images/banner.jpg') ;
+    background-size:cover;
+
+    #overlay{
+      background:#0a0a0a;
+      height: calc(100vh - 0px) !important;
+      opacity: .7;
+    }
+  }
+}
