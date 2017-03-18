@@ -1,36 +1,79 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://use.fontawesome.com/75f30e1def.js"></script>
+</head>
+
+<body>
 
 
-<div class="off-canvas-wrapper">
-  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-    <div class="off-canvas off-canvas-overlap-left position-left" id="main-menu" data-off-canvas data-position="left">
-      <h2>Canvas</h2>
-    </div> <!-- off canvas -->
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="main-menu" data-off-canvas data-position="left">
+                <div class="row">
+                    <div class="small-12 text-center">
+                        <div class="outer-brand-icon">
+                            <i class="fa fa-shopping-bag brand-icon" aria-hidden="true"></i>
+                            <div class="row">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- off canvas -->
 
-<div class="off-canvas-content" data-off-canvas-content>
-<div class="main-banner">
-    <div id="overlay">
-      <div class="iconia">
-        <h2>iconia</h2>
-        <p>Redefine</p>
-      </div>
-      </div>
-      <div class="medium-1 columns">
-        <a class="menu-icon" data-open="main-menu"></a>
-      </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <div class="main-banner">
+                  <div id="overlay"></div>
+                  <div class="iconia">
+                      <h2>iconia</h2>
+                      <p>Redefine</p>
+                  </div>
+
+                    <div class="medium-1 columns show-for-small-only">
+                        <a class="menu-icon" data-open="main-menu"></a>
+                    </div>
+                </div>
+
+
+
+                <section class="video">
+                    <div class="row">
+                      <div class="medium-6 columns">
+                        <div class="flex-video">
+                          <iframe width="100%" src="https://www.youtube.com/embed/Q_leV339TdM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="medium-6 columns">
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                      </div>
+                    </div>
+                </section>
+
+
+                <section class="video-playback">
+
+                    <video class="promo-video" autoplay muted loop>
+                      <source src="assets/videos/WOLFPACK.mp4" type="video/mp4">
+                      <source src="assets/videos/WOLFPACK.webm" type="video/webm">
+                        <div id="vid-overlay"></div>
+                    </video>
+                </section>
+
+
+            </div>
+        </div>
     </div>
-</div>
-</div>
-</div>
 
 
 
@@ -40,5 +83,6 @@
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>

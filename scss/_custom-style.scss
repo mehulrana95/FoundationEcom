@@ -1,70 +1,101 @@
-
 // Small screens
 @media only screen {
+    body {
+        .brand-icon {
+            font-size: rem-calc(75);
+            margin-top: rem-calc(20);
+            border: solid rem-calc(2) $black;
+            border-radius: rem-calc(10);
+            padding: rem-calc(20);
+            color: $brand-color;
+        }
 
-  body{
-    .main-banner{
-      height: calc(100vh - 0px) !important;
-      background: url('../assets/images/banner.jpg') ;
-      background-size: cover;
-      background-position: center top;
+        .main-banner {
+            height: calc(100vh - 0px) !important;
+            background: url('../assets/images/banner.jpg');
+            background-size: cover;
+            background-position: center top;
+            position: relative;
 
-      #overlay{
-        background:$black;
-        height: calc(100vh - 0px) !important;
-        opacity: .7;
+            #overlay {
+                background: $black;
+                height: calc(100vh - 0px) !important;
+                opacity: 0.7;
+            }
 
-        .iconia{
-          position: absolute;
-          top:50%;
-          left: 50%;
-          transform: translateY(-50%) translateX(-50%);
+            .iconia {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
 
-          h2{
-            text-transform: uppercase;
-            color:$white;
-            font-size: rem-calc(60);
-            opacity: 1;
-            letter-spacing: rem-calc(10);
-            font-family: $banner-font-family;
-            line-height: rem-calc(50);
+                h2 {
+                    text-transform: uppercase;
+                    color: $white;
+                    font-size: rem-calc(60);
+                    opacity: 1;
+                    letter-spacing: rem-calc(10);
+                    font-family: $banner-font-family;
+                    line-height: rem-calc(50);
+                }
+
+                p {
+                    text-transform: uppercase;
+                    color: $white;
+                    font-family: $banner-font-family;
+                    letter-spacing: rem-calc(20);
+                }
+            }
+
+            .menu-icon {
+                position: absolute;
+                top: 10px;
+                cursor: pointer;
+            }
+        }
+        // section 2 Video
+        .video {
+            margin: rem-calc(50) rem-calc(0);
+
+            p {
+                font-size: rem-calc(14);
+                color: $dark-gray;
+            }
+        }
+
+        .video-playback {
+          height:calc(100vh - 50%);
+
+          #vid-overlay{
+            background: $black;
+            height: calc(100vh - 0px) !important;
+            opacity: 0.7;
           }
 
-          p{
-            text-transform: uppercase;
-            color:$white;
-            font-family: $banner-font-family;
-            letter-spacing: rem-calc(19);
+          .promo-video{
+            width: 100%;
           }
         }
-      }
-
-      .menu-icon{
-        position: absolute;
-        top:10px;
-        cursor: pointer;
-      }
     }
-  }
-
-} /* Define mobile styles */
-
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
+}
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 // Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
+@media only screen and (min-width: 40.063em) {}
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
+@media only screen and (min-width: 64.063em) {}
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 // XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
+@media only screen and (min-width: 90.063em) {}
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 // XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {}
+/* min-width 1921px, xxlarge screens */
